@@ -5,8 +5,8 @@ Version:	1.1.2
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/proto/randrproto-X11R7.0-%{version}.tar.bz2
-# Source0-md5:	bcf36d524f6f50aa16ee8e183350f7b8
+Source0:	http://xorg.freedesktop.org/releases/individual/proto/randrproto-%{version}.tar.bz2
+# Source0-md5:	8e72173ad7aa8abe218e6e7fe0903842
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -33,7 +33,7 @@ Randr protocol and ancillary headers.
 Nag³ówki protoko³u Randr i pomocnicze.
 
 %prep
-%setup -q -n randrproto-X11R7.0-%{version}
+%setup -q -n randrproto-%{version}
 
 %build
 %{__aclocal}
