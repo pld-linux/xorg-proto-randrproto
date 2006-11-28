@@ -1,12 +1,12 @@
 Summary:	Randr protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u Randr i pomocnicze
 Name:		xorg-proto-randrproto
-Version:	1.1.2
+Version:	1.2.0
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/randrproto-%{version}.tar.bz2
-# Source0-md5:	8e72173ad7aa8abe218e6e7fe0903842
+# Source0-md5:	8a3bdb579fe18fd0b70db21b56363cee
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -55,6 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
+%doc COPYING
 %{_includedir}/X11/extensions/*.h
 %{_pkgconfigdir}/randrproto.pc
