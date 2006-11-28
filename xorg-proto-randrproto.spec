@@ -1,5 +1,5 @@
-Summary:	Randr protocol and ancillary headers
-Summary(pl):	Nag³ówki protoko³u Randr i pomocnicze
+Summary:	RandR extension headers
+Summary(pl):	Nag³ówki rozrzerzenia RandR
 Name:		xorg-proto-randrproto
 Version:	1.2.0
 Release:	1
@@ -14,23 +14,43 @@ BuildRequires:	xorg-util-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Randr protocol and ancillary headers.
+RandR extension headers.
+
+The X Resize, Rotate and Reflect Extension, called RandR for short,
+brings the ability to resize, rotate and reflect the root window of a
+screen. It is based on the X Resize and Rotate Extension as specified
+in the Proceedings of the 2001 Usenix Technical Conference [RANDR].
 
 %description -l pl
-Nag³ówki protoko³u Randr i pomocnicze.
+Nag³ówki rozszerzenia RandR.
+
+Rozszerzenie X Resize, Rotate and Reflect (w skrócie RandR) daje
+mo¿liwo¶æ zmiany rozmiaru, obrotu i odbicia g³ównego okna ekranu. Jest
+oparte na rozszerzeniu X Resize and Rotate opisanym w protoko³ach
+konferencji 2001 Usenix Technical Conference [RANDR].
 
 %package devel
-Summary:	Randr protocol and ancillary headers
-Summary(pl):	Nag³ówki protoko³u Randr i pomocnicze
+Summary:	RandR extension headers
+Summary(pl):	Nag³ówki rozrzerzenia RandR
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xproto-devel
 Obsoletes:	randrext
 
 %description devel
-Randr protocol and ancillary headers.
+RandR extension headers.
+
+The X Resize, Rotate and Reflect Extension, called RandR for short,
+brings the ability to resize, rotate and reflect the root window of a
+screen. It is based on the X Resize and Rotate Extension as specified
+in the Proceedings of the 2001 Usenix Technical Conference [RANDR].
 
 %description devel -l pl
-Nag³ówki protoko³u Randr i pomocnicze.
+Nag³ówki rozszerzenia RandR.
+
+Rozszerzenie X Resize, Rotate and Reflect (w skrócie RandR) daje
+mo¿liwo¶æ zmiany rozmiaru, obrotu i odbicia g³ównego okna ekranu. Jest
+oparte na rozszerzeniu X Resize and Rotate opisanym w protoko³ach
+konferencji 2001 Usenix Technical Conference [RANDR].
 
 %prep
 %setup -q -n randrproto-%{version}
@@ -55,6 +75,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc COPYING
+%doc COPYING randrproto.txt
 %{_includedir}/X11/extensions/*.h
 %{_pkgconfigdir}/randrproto.pc
