@@ -1,5 +1,5 @@
 Summary:	RandR extension headers
-Summary(pl):	Nag³ówki rozrzerzenia RandR
+Summary(pl.UTF-8):   NagÅ‚Ã³wki rozrzerzenia RandR
 Name:		xorg-proto-randrproto
 Version:	1.2.0
 Release:	1
@@ -21,17 +21,17 @@ brings the ability to resize, rotate and reflect the root window of a
 screen. It is based on the X Resize and Rotate Extension as specified
 in the Proceedings of the 2001 Usenix Technical Conference [RANDR].
 
-%description -l pl
-Nag³ówki rozszerzenia RandR.
+%description -l pl.UTF-8
+NagÅ‚Ã³wki rozszerzenia RandR.
 
-Rozszerzenie X Resize, Rotate and Reflect (w skrócie RandR) daje
-mo¿liwo¶æ zmiany rozmiaru, obrotu i odbicia g³ównego okna ekranu. Jest
-oparte na rozszerzeniu X Resize and Rotate opisanym w protoko³ach
+Rozszerzenie X Resize, Rotate and Reflect (w skrÃ³cie RandR) daje
+moÅ¼liwoÅ›Ä‡ zmiany rozmiaru, obrotu i odbicia gÅ‚Ã³wnego okna ekranu. Jest
+oparte na rozszerzeniu X Resize and Rotate opisanym w protokoÅ‚ach
 konferencji 2001 Usenix Technical Conference [RANDR].
 
 %package devel
 Summary:	RandR extension headers
-Summary(pl):	Nag³ówki rozrzerzenia RandR
+Summary(pl.UTF-8):   NagÅ‚Ã³wki rozrzerzenia RandR
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xproto-devel
 Obsoletes:	randrext
@@ -44,12 +44,12 @@ brings the ability to resize, rotate and reflect the root window of a
 screen. It is based on the X Resize and Rotate Extension as specified
 in the Proceedings of the 2001 Usenix Technical Conference [RANDR].
 
-%description devel -l pl
-Nag³ówki rozszerzenia RandR.
+%description devel -l pl.UTF-8
+NagÅ‚Ã³wki rozszerzenia RandR.
 
-Rozszerzenie X Resize, Rotate and Reflect (w skrócie RandR) daje
-mo¿liwo¶æ zmiany rozmiaru, obrotu i odbicia g³ównego okna ekranu. Jest
-oparte na rozszerzeniu X Resize and Rotate opisanym w protoko³ach
+Rozszerzenie X Resize, Rotate and Reflect (w skrÃ³cie RandR) daje
+moÅ¼liwoÅ›Ä‡ zmiany rozmiaru, obrotu i odbicia gÅ‚Ã³wnego okna ekranu. Jest
+oparte na rozszerzeniu X Resize and Rotate opisanym w protokoÅ‚ach
 konferencji 2001 Usenix Technical Conference [RANDR].
 
 %prep
