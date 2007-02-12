@@ -1,5 +1,5 @@
 Summary:	RandR extension headers
-Summary(pl.UTF-8):   Nagłówki rozrzerzenia RandR
+Summary(pl.UTF-8):	Nagłówki rozrzerzenia RandR
 Name:		xorg-proto-randrproto
 Version:	1.2.0
 Release:	1
@@ -31,7 +31,7 @@ konferencji 2001 Usenix Technical Conference [RANDR].
 
 %package devel
 Summary:	RandR extension headers
-Summary(pl.UTF-8):   Nagłówki rozrzerzenia RandR
+Summary(pl.UTF-8):	Nagłówki rozrzerzenia RandR
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xproto-devel
 Obsoletes:	randrext
