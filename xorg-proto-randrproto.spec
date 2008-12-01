@@ -1,12 +1,12 @@
 Summary:	RandR extension headers
 Summary(pl.UTF-8):	Nagłówki rozrzerzenia RandR
 Name:		xorg-proto-randrproto
-Version:	1.2.2
+Version:	1.2.99.1
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/randrproto-%{version}.tar.bz2
-# Source0-md5:	0458f24d6a77ff4bc5182816f482afa1
+# Source0-md5:	5a4de6ae86115061a5ce9107a91974a5
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
