@@ -10,7 +10,7 @@ Source0:	http://xorg.freedesktop.org/releases/individual/proto/randrproto-%{vers
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros
+BuildRequires:	xorg-util-util-macros >= 1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -76,5 +76,5 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog randrproto.txt
-%{_includedir}/X11/extensions/*.h
+%{_includedir}/X11/extensions/randr*.h
 %{_pkgconfigdir}/randrproto.pc
