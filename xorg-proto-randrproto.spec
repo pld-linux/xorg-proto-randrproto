@@ -1,14 +1,14 @@
 Summary:	RandR extension headers
 Summary(pl.UTF-8):	Nagłówki rozrzerzenia RandR
 Name:		xorg-proto-randrproto
-Version:	1.3.1
+Version:	1.3.2
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/randrproto-%{version}.tar.bz2
-# Source0-md5:	a5c244c36382b0de39b2828cea4b651d
+# Source0-md5:	597491c0d8055e2a66f11350c4985775
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	xorg-util-util-macros >= 1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -67,14 +67,13 @@ konferencji 2001 Usenix Technical Conference [RANDR].
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	pkgconfigdir=%{_pkgconfigdir}
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog randrproto.txt
+%doc COPYING ChangeLog README randrproto.txt
 %{_includedir}/X11/extensions/randr*.h
 %{_pkgconfigdir}/randrproto.pc
